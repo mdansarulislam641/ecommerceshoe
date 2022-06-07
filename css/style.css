@@ -1,0 +1,355 @@
+*{
+    margin:0;
+    padding:0;
+    outline: none;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+ul,ol{
+    list-style: none;
+}
+.container{
+    width:1170px;
+    /* background:yellow; */
+    margin:0 auto;
+}
+
+/* ========all common css end here========== */
+
+/* =======navigation part start here======== */
+#navigation{
+    width:100%;
+    /* height:100px; */
+    /* background-color: rgb(139, 135, 135); */
+    position:absolute;
+    top:10px;
+    left:0px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding-top:10px;
+}
+.menu .logo{}
+.menu .logo i{
+    color:blueviolet;
+    font-size:30px;
+}
+.menu .logo .nike{
+    font-size:35px;
+    color:#FF8080;
+    margin: 0 10px;
+}
+.menu .logo .infinity{
+    font-size:35px;
+    color:#0a0a0a;
+}
+
+
+.menu_list{}
+.menu_list ul{
+    display:flex;
+    gap:20px;
+}
+.menu_list ul li{
+    color:red;
+    font-size: 22px;
+    transition: all linear .3s;
+}
+.active{
+    color:blue;
+}
+.menu_list ul li::after{
+    content: '';
+    display: block;
+    width:0%;
+    height:4px;
+    background:red;
+    transition: all linear .3s;
+}
+
+.menu_list ul li:hover::after{
+    width:100%;
+
+}
+.menu_list ul li a:hover{
+    color:blue;
+}
+/* =======navigation part end here======== */
+
+/* ========benner part start here========= */
+#benner{
+    background-color: #edf2fc;;
+}
+.main_benner{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:50px;
+    padding-top: 100px;
+}
+.main_benner .benner_image{
+
+}
+#egg {
+    display: block;
+    width: 510px;
+    height: 180px;
+    background-color: red;
+    border-radius: 50% 50% 50% 50% / 72% 60% 40% 40%;
+    margin-top: 184px;
+    position: relative;
+  }
+
+.shape_image .shoes img{
+    position:absolute;
+    top:24%;
+    left:48%;
+    transform: translate(-50%,-50%);
+    height: 347px;
+    width: 535px;
+    transform: rotate;
+    /*! ttansform: rotate(33deg); */
+}
+.benner_text{
+    /*! line-height: 10px; */
+    padding-top: 115px;
+}
+.benner_text .text h1{
+    color:#f705b0;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-style: bold;
+    font-weight: bold;
+}
+.benner_text .text h2{
+    color:#231C1C;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-top: -10px;
+}
+.benner_text .text p{
+    color:#362B2B;
+    font-size: 16px;
+    /*! text-transform: uppercase; */
+    /*! padding: 0 -16px; */
+    width: 513px;
+    margin-bottom: 20px;
+}
+.benner_text .buttun{
+}
+.benner_text .buttun a{
+    padding:10px 20px;
+    position: relative;
+    color:#0a0a0a;
+    text-transform: uppercase;
+    background:blue;
+    border-radius: 35px;
+    border:2px solid black;
+    z-index: 222;
+}
+.benner_text .buttun a::after{
+    content: '';
+    width:0%;
+    height:100%;
+    background:red;
+    transition: all linear .5s;
+    /* z-index: 333; */
+    position:absolute;
+    top:0;
+    left:0;
+    /* display: inline; */
+    border-radius: 35px;
+}
+.benner_text .buttun a:hover::after{
+    width:100%;
+    z-index: -1;
+    background:red;
+}
+.benner_text .buttun a{
+  background:none
+}
+/* ========benner part End here========= */
+
+/* ========Casual shoes part start here========= */
+#casual_shoes{
+    background:linear-gradient(#ffd6d6,#f1f1f1);
+    padding-bottom:100px;
+   
+}
+.main_casual_shoes{}
+ .header_text h2{
+    color:#f705b0;
+    font-size:30px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    display: block;
+    margin-bottom:50px;
+    /* margin-top:50px; */
+    /* padding-top:50px; */
+    
+
+}
+.header_text{
+    position: relative;
+}
+.header_text i{
+    position: absolute;
+    top: 81%;
+    left: 50%;
+    transform: translate(-50%);
+    color: yellow;
+    /*! width: 27px; */
+    /*! height: 5px; */
+    /*! background: #be151500; */
+}
+.header_text h2::after{
+    content: '';
+    position:absolute;
+    background:red;
+    width:158px;
+    height:5px;
+    top:34px;
+    left: 50%;
+    transform: translate;
+    transform: translatex(-50%);
+}
+.header_text h2::before{
+    content: '';
+    position:absolute;
+    /* background:white ; */
+    width:30px;
+    height:5px;
+    top:34px;
+    left: 50%;
+    transform: translatex(-50%);
+    z-index: 1;
+}
+
+.shoes_part{
+    display: flex;
+    gap:30px;
+}
+.shoes_part .item{
+    width:33.33%;
+    border:1px solid red;
+    padding:10px;
+    position: relative;
+
+}
+.item .item_img img{
+    width:100%;
+    /* height:300px; */
+}
+.item .item_name h2{
+    text-align: center;
+    font-size:25px;
+    color:#5e7bc9;
+    text-transform: uppercase;
+}
+.item .item_details{
+    font-size:16px;
+    color:#231C1C;
+
+}
+.item .item_icon{
+    text-align:center;
+    margin-bottom: 3px;
+    margin-top: 10px;
+}
+.item .item_icon i{
+  color:red;
+}
+.item .cost{
+    color:#e22424;
+    text-align: center;
+    margin-bottom: 18px;
+    text-transform: capitalize;
+}
+.item .item_button{
+    padding:10px 10px;
+    background-color: #fdb1b1;
+    display: inline-block;
+    position:absolute;
+    top:96%;
+    left:50%;
+    transform: translateX(-50%);
+    border-radius: 35px;
+    transition: all linear .3s;
+}
+.item .item_button i{
+    color:green;
+}
+.item .item_button a{
+    color:red;
+}
+.item .item_button:hover{
+    background-color: #f705b0;
+    
+}
+.item .item_button:hover a{
+    color:white;
+}
+.item .item_button:hover i{
+    color:white;
+}
+/* ========Casual shoes part End here========= */
+
+
+/* ========formal shoes part start here========= */
+#formal_shoes{
+    background:linear-gradient(#f1f1f1,#b99ab0);
+    padding-bottom:100px;
+}
+/* ========formal shoes part End here========= */
+
+/* ========service  part start here========= */
+#tradding{
+   background:linear-gradient(yellowgreen,#f1f1f1);
+}
+.service_section{
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+}
+.icon i{
+    font-size:80px;
+    color:black;
+    margin-top:10px;
+    width:100px;
+}
+.service_item{
+    display: flex;
+    /* background: yellow; */
+    padding:20px 20px;
+    background-color: #edf2fc;
+    margin-bottom:30px;
+    border-radius: 10px;
+    transition:all linear .3s;
+}
+.service_item:hover{
+    box-shadow: 0px 0px 9px 6px #f1f1f1;
+}
+.service_name{
+    width:40%;
+}
+.service_name .text{
+    /* padding-right:10px; */
+    margin-left:10px;
+    text-transform: capitalize;
+}
+.service_image{
+    width:60%;
+    /* background: black; */
+}
+.service_image img{
+    width:100%;
+    height:450px;
+}
+/* ========service  part End here========= */
+
+/* ========benner part start here========= */
+/* ========benner part End here========= */
